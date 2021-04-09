@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "petsmartws",
+  "private_key_id": "ee41e17ee4c9945d88274ddc7d2f69094c3d0c16",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzdR05y55NV6Cu\n8WJcDMglz1pPtn9THAnvn1hZHflW2IayoXBW6g1xjpr5lCy0PsxbteiIdmUowmSa\nWMcddQGTOkZKfsMdKKUZWsUVrZoNCV+7ZOQq24c3mp83mfazfz9kQXEhRtZOVSd8\nJZO2mgT6+2nKD+4wii4kIjpJpcuUIeoaBWa6WUqx4gf+CISYuLuvmB/rY71LX2/Q\njKUTbMT9WWZFuw12Y81RS/DT0Vw5iqcwvNJzz+6BnqOZtFDKyYe1bi6KocPnvlTv\nwJMJ2qp5ATnnOVoLUgQVXm9vl7e+22yotmpir3VjS2GqEX3ioBTKA79TPZfTqtit\nQnvOT+lLAgMBAAECggEAMrr8OI7hoM6RO3M8UXZBjEK6LoeSJc3q1yTuBj9NcaoD\nJfMyPTer9jqQf9ZN7uRDw/dAFXeWsDeH1gQbwa2GdPbH0R5VjOQlC+5XgYHSZzYL\nrH9gauclKehZcw/gqCxkILTJRNVwFrPG1jcPM1MF7mdtJ/Rp6qndUlSkspYeXzDf\n+KEeW8Sd2xKuvrk2a6qZ4bcf0HUiKqci05Bd+PIZqKay+4jBkwl8fvyoDE7Ru2HX\nqewea46nTNsR4Dmw9BiOb0eTEdxDCaJEQMnIoYeE2/6BKbeXqdrYlzyocwbO+jMR\nvitHCQRoJfCrgxt8MKJM1/mZY6T37oej/aRaBRl38QKBgQDZrSapcGbZkHTV2Ji1\n61g01fwyvf9hhiWYDiMGQKO4xdn1MCyuphZmsNxWYmJOYpyKb8R0mAg/w35jTYxh\ny0eohuigfTneHvxBIFQ+418wYWzYtiu9EY8iNHC5kTQz+qd7xvFUtdn6IwnuxlMp\nXij/qRIF+PuM325GFADFB2m8cQKBgQDTDWgo97BFwpCtHUOS42Q48ITyWBjwGKQs\nRlStvFK3KAYI2DUnFNpS4Y7r4VdQaYEGbxntCeWPJcipi6KZzk0WIaZqkYsQ4JG+\nUTctwKez/xbJB/m7DSQUR19B9BfjdM3Do2poaBcGaiXHYFAs7VZcmUXGL6iuor5i\nz9xiTtPPewKBgQC1XCGJLKBUhpoBjdv2PiYYp2zfrhN34rexz5142SRPj3DAaynf\nPXwOhS6fPotfeaOpZ+PLrNu6nJvSCst6s0556CUrigpLuY88h74JQ5GMkq+Ig4c/\nmMCjpAODaKqQ4Dbo1uE9TeJWGRlueojRP6VzFR9yIHcdcQ7EjmfxwPJk0QKBgHa+\nf1E1cqb9Pjs4UNGvQK9Mm/BiIr3Lj2sdsv0BDSThzuthAh7X+7JQGAKdCWxDwAVn\nsxWL0O3GW20RFE4nJXYDPseM1cqMH1QOC9ahI3oBVseKxjY4wYjrUywfcuVVzYN6\nSR8vGW1Rgan4hYORkVqOHhTQsb538FhWDO/+2+tLAoGBAK7nSblsq6UrNs/+xZl5\nrSJvIX2RNknaf5HZeUc+umZFHxZmLmuML7ldfc0xSC2qFqa8rxJkNGFalsfwqi3i\nSpYKQLThMYKYwUdbumq8MPUr6bIo4VXQp7r8pkZhA+g2ejYtDR8IDnnO8LNipl/a\nQGIR2FyKeFlRrwkgiJAX6t+v\n-----END PRIVATE KEY-----\n",
+  "client_email": "petsmartws@appspot.gserviceaccount.com",
+  "client_id": "108392699042228223506",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/petsmartws%40appspot.gserviceaccount.com"
+}

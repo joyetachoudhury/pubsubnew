@@ -1,0 +1,22 @@
+[
+{
+"Name" : "Arun",
+"Username" :"aruns05",
+"Address" : "Mayur Vihar 2",
+"State" : "Delhi",
+"Country" : "India",
+"Email" : "arun@gmail.com",
+"PAN" : "xyzpqr",
+"Phoneno" : "3307855403"
+},
+{
+"Name" : "Sahcin",
+"Username" :"Sahcin01",
+"Address" : "Bandra",
+"State" : "Mumbai",
+"Country" : "India",
+"Email" : "Sachin@gmail.com",
+"PAN" : "xyzpqr1234",
+"Phoneno" : "54564667"
+}
+]
