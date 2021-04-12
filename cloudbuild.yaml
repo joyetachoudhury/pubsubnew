@@ -4,9 +4,9 @@
   args:
   - '-c'
   - |
-    gcloud source repos clone pubsub-envrn1 && \
-    cd pubsub-envrn1 && \
-    git checkout candidate1 && \
+    gcloud source repos clone pubsub-entry && \
+    cd pubsub-entry && \
+    git checkout submission && \
     git config user.email $(gcloud auth list --filter=status:ACTIVE --format='value(account)')
 
 # This step generates the new manifest
@@ -17,7 +17,7 @@
   - '-c'
   - |
      sed "s/GOOGLE_CLOUD_PROJECT/${PROJECT_ID}/g" kubernetes.yaml.tpl | \
-     sed "s/COMMIT_SHA/${SHORT_SHA}/g" > pubsub-envrn1/kubernetes.yaml
+     sed "s/COMMIT_SHA/${SHORT_SHA}/g" > pubsub-entry/kubernetes.yaml
 
 # This step pushes the manifest back to pubsub-envrn1
 - name: 'gcr.io/cloud-builders/gcloud'
@@ -27,9 +27,9 @@
   - '-c'
   - |
     set -x && \
-    cd pubsub-envrn1 && \
+    cd pubsub-entry && \
     git add kubernetes.yaml && \
-    git commit -m "Deploying image gcr.io/${PROJECT_ID}/hello-cloudbuild:${SHORT_SHA}
-    Built from commit ${COMMIT_SHA} of repository hello-cloudbuild-app
+    git commit -m "Deploying image gcr.io/${PROJECT_ID}/pubsub:${SHORT_SHA}
+    Built from commit ${COMMIT_SHA} of repository pubsub
     Author: $(git log --format='%an <%ae>' -n 1 HEAD)" && \
-    git push origin candidate1
+    git push origin submission
