@@ -18,12 +18,13 @@ steps:
   - 'gcr.io/$PROJECT_ID/pubsub:$SHORT_SHA'
   
 # deploy container image to GKE
-- name: "gcr.io/cloud-builders/pubsub"
+- name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy
   args:
-  - run
-  - --filename=kubernetes.yaml
-  - --image=gcr.io/${PROJECT_ID}/pubsub:$SHORT_SHA
-  - --location=us-central1
-  - --cluster=pubsub
+  - 'apply'
+  - '-f'
+  - 'kubernetes.yaml'
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=us-central1'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=pubsub'
 # [END cloudbuild]
