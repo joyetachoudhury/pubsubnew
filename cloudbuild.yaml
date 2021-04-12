@@ -19,6 +19,7 @@ steps:
   
 # deploy container image to GKE
 - name: "gcr.io/cloud-builders/pubsub"
+  id: Deploy
   args:
   - run
   - --filename=kubernetes.yaml
