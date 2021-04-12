@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: pubsub
-        image: gcr.io/$PROJECT_ID/pubsub:COMMIT_SHA
+        image: gcr.io/$PROJECT_ID/pubsub:$SHORT_SHA
         ports:
         - containerPort: 8080
 ---
