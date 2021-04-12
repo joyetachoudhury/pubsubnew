@@ -33,4 +33,4 @@
     git commit -m "Deploying image gcr.io/${PROJECT_ID}/pubsub:${SHORT_SHA}
     Built from commit ${COMMIT_SHA} of repository pubsub
     Author: $(git log --format='%an <%ae>' -n 1 HEAD)" && \
-    git push origin candidate1sss
+    git push origin candidate1
