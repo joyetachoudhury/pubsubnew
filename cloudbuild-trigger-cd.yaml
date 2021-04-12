@@ -28,7 +28,7 @@
   - '-c'
   - |
     set -x && \
-    cd pubsub-envrn1 && \
+    cd pubsub-entry && \
     git add kubernetes.yaml && \
     git commit -m "Deploying image gcr.io/${PROJECT_ID}/pubsub:${SHORT_SHA}
     Built from commit ${COMMIT_SHA} of repository pubsub
