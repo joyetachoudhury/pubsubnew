@@ -1,0 +1,28 @@
+steps:
+- name: 'gcr.io/cloud-builders/kubectl'
+  id: Deploy
+  args:
+  - 'apply'
+  - '-f'
+  - 'kubernetes.yaml'
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=us-central1'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=pubsub'
+
+- name: 'gcr.io/cloud-builders/git'
+  id: Copy to production1 branch
+  entrypoint: /bin/sh
+  args:
+  - '-c'
+  - |
+    set -x && \
+    
+    git config user.email $(gcloud auth list --filter=status:ACTIVE --format='value(account)') && \
+    
+    git fetch origin production1 && git checkout production1 && \
+    git checkout $COMMIT_SHA kubernetes.yaml && \
+   
+    git commit -m "Manifest from commit $COMMIT_SHA
+    $(git log --format=%B -n 1 $COMMIT_SHA)" && \
+   
+    git push origin production1
